@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عنوان الصفحة</title>
+    <!-- تضمين Bootstrap CSS من CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/app.css"> <!-- تأكد من أن مسار CSS صحيح -->
+</head>
+<body>
+
+    <!-- رأس الصفحة -->
+    <header class="bg-dark text-white text-center p-4">
+        <h1>مرحبا بك في موقعي</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">الشعار</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="container mt-4">
+        <section id="home" class="mb-4">
+            <h2>الرئيسية</h2>
+            <p>هذا هو قسم الصفحة الرئيسية. يمكنك إضافة أي محتوى تريده هنا.</p>
+        </section>
+        
+        <section id="about" class="mb-4">
+            <h2>من نحن</h2>
+            <p>هذه فقرة تتحدث عن الشركة أو الموقع الخاص بك.</p>
+        </section>
+
+        <section id="services" class="mb-4">
+            <h2>خدماتنا</h2>
+            <ul class="list-group">
+                <li class="list-group-item">خدمة 1</li>
+                <li class="list-group-item">خدمة 2</li>
+                <li class="list-group-item">خدمة 3</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="mb-4">
+            <h2>اتصل بنا</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">الاسم:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">الرسالة:</label>
+                    <textarea class="form-control" id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">إرسال</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>جميع الحقوق محفوظة &copy; 2024</p>
+    </footer>
+
+    <!-- تضمين jQuery وBootstrap JS من CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
